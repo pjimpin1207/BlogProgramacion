@@ -1,0 +1,271 @@
+/* Colores principales */
+:root {
+  --primary-color: #4EA9F4;
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --post-bg: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+  width: 100%;
+  background-color: var(--post-bg);
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.main-header .header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header h1 {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.main-header .subtitle {
+  color: var(--text-color);
+  margin: 0.5rem 0 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+.main-header .nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.main-header .nav-bar a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.main-header .nav-bar a:hover {
+  background-color: #3a8cd4;
+  color: #ffffff;
+}
+
+/* Main content */
+.main-content {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* perfil más a la izquierda */
+}
+
+/* Perfil */
+.profile {
+  background-color: var(--post-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+  flex-shrink: 0;
+  margin-left: 0;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile h2 {
+  margin: 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.profile p {
+  margin: 0;
+}
+
+/* Últimos posts */
+.recent-posts {
+  flex: 1; /* ocupa todo el espacio restante */
+  max-width: 900px; /* más ancho para los posts */
+  background-color: var(--post-bg);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Estilo de cada post estático */
+.post {
+  background-color: var(--post-bg);
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary-color);
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: #121212;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #3a8cd4;
+}
+
+/* Botón leer más en cada post */
+.post .btn-read {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  background-color: var(--primary-color);
+  color: #121212;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.post .btn-read:hover {
+  background-color: #3a8cd4;
+}
+
+/* Centrar link "Ver todos los posts" */
+.all-posts-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--post-bg);
+  margin-top: auto; /* empuja el footer abajo */
+}
+
+
+/* Estilos específicos para posts */
+.post {
+  background-color: var(--post-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 3rem;
+}
+
+.post h2 {
+  margin-bottom: 0.5rem;
+}
+
+.post .meta {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+.tabla-lenguajes {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.tabla-lenguajes th,
+.tabla-lenguajes td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: left;
+}
+
+.tabla-lenguajes thead {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+.tabla-lenguajes tr:nth-child(even) {
+  background-color: rgba(255,255,255,0.05);
+}
+
+.conclusion {
+  margin-top: 2rem;
+}
+
+.conclusion ul {
+  padding-left: 1.5rem;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: #000;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #fff253cc;
+}
+
+/* Bloques de código dentro de los posts */
+.code-block {
+  display: block;
+  background-color: #0f0f0f;
+  color: #00ff9c;
+  font-family: "Courier New", monospace;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  white-space: pre;
+  border: 1px solid #333;
+}
+
+.post ul, .post ol {
+  padding-left: 1.5rem;
+  line-height: 1.6;
+}
+
+.post h3 {
+  color: var(--primary-color);
+  margin-top: 1.5rem;
+}
