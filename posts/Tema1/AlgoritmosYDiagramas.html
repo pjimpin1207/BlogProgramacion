@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algoritmos y diagramas - Blog DIWEB</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/post.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-content">
+      <h1>Blog DIWEB</h1>
+      <p class="subtitle">Descubre mis proyectos, posts y aprendizajes sobre Desarrollo de Interfaces Web</p>
+      <nav class="nav-bar">
+        <a href="../../index.html">Inicio</a>
+        <a href="../../posts.html">Todos los posts</a>
+        <a href="https://github.com/pjimpin1207" target="_blank">Mi GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <article class="post">
+      <h2>Algoritmos y diagramas</h2>
+      <p class="meta">Publicado por <strong>pjimpin1207</strong> el <em>23 de septiembre de 2025</em></p>
+
+      <div class="post-body">
+
+        <p>En este post veremos ejemplos de algoritmos y sus diagramas de flujo. Los algoritmos se expresan como pasos lógicos que luego se pueden representar gráficamente mediante diagramas.</p>
+
+        <h3>Algoritmo y diagrama para calcular el área de un círculo</h3>
+        <p>Este algoritmo solicita el radio del círculo, calcula su área y muestra el resultado final.</p>
+
+        <pre><code class="code-block">
+// Algoritmo: Calcular el área de un círculo
+Inicio
+    Escribir "Introduce el valor del radio:"
+    Leer radio
+    area ← 3.1416 * radio * radio
+    Escribir "El área del círculo es: ", area
+Fin
+        </code></pre>
+
+        <p><strong>Diagrama de flujo:</strong></p>
+        <ul>
+          <li>Inicio → Leer radio → Calcular área = π * r² → Mostrar resultado → Fin</li>
+        </ul>
+
+        <h3>Algoritmo y diagrama para calcular la nota media de tres notas</h3>
+        <p>Este algoritmo pide tres notas distintas, calcula la media y muestra el resultado.</p>
+
+        <pre><code class="code-block">
+// Algoritmo: Calcular la media de tres notas
+Inicio
+    Escribir "Introduce la primera nota:"
+    Leer n1
+    Escribir "Introduce la segunda nota:"
+    Leer n2
+    Escribir "Introduce la tercera nota:"
+    Leer n3
+    media ← (n1 + n2 + n3) / 3
+    Escribir "La nota media es: ", media
+Fin
+        </code></pre>
+
+        <p><strong>Diagrama de flujo:</strong></p>
+        <ul>
+          <li>Inicio → Leer n1, n2, n3 → Calcular media = (n1 + n2 + n3)/3 → Mostrar resultado → Fin</li>
+        </ul>
+
+        <h3>Algoritmo y diagrama para calcular la nota media e indicar si está aprobado o suspenso</h3>
+        <p>En este algoritmo se calcula la nota media de tres notas y se evalúa si el alumno aprueba (nota ≥ 5) o suspende.</p>
+
+        <pre><code class="code-block">
+// Algoritmo: Media y resultado final
+Inicio
+    Escribir "Introduce tres notas:"
+    Leer n1, n2, n3
+    media ← (n1 + n2 + n3) / 3
+    Si media >= 5 Entonces
+        Escribir "Aprobado con media: ", media
+    Sino
+        Escribir "Suspenso con media: ", media
+    FinSi
+Fin
+        </code></pre>
+
+        <p><strong>Diagrama de flujo:</strong></p>
+        <ul>
+          <li>Inicio → Leer n1, n2, n3 → Calcular media → ¿media ≥ 5? → (Sí) “Aprobado” / (No) “Suspenso” → Fin</li>
+        </ul>
+
+        <h3>Algoritmo y diagrama para determinar si una persona es mayor de edad</h3>
+        <p>Este programa solicita la edad y muestra si la persona es mayor o menor de edad.</p>
+
+        <pre><code class="code-block">
+// Algoritmo: Mayor de edad
+Inicio
+    Escribir "Introduce tu edad:"
+    Leer edad
+    Si edad >= 18 Entonces
+        Escribir "Eres mayor de edad"
+    Sino
+        Escribir "Eres menor de edad"
+    FinSi
+Fin
+        </code></pre>
+
+        <p><strong>Diagrama de flujo:</strong></p>
+        <ul>
+          <li>Inicio → Leer edad → ¿edad ≥ 18? → (Sí) “Mayor de edad” / (No) “Menor de edad” → Fin</li>
+        </ul>
+
+      </div>
+    </article>
+
+    <div class="back-link">
+      <a href="../../index.html" class="btn">← Volver al inicio</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pablo Jiménez</p>
+  </footer>
+
+</body>
+</html>

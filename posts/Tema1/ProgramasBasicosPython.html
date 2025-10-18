@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programas básicos con Python - Blog DIWEB</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/post.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-content">
+      <h1>Blog DIWEB</h1>
+      <p class="subtitle">Descubre mis proyectos, posts y aprendizajes sobre Desarrollo de Interfaces Web</p>
+      <nav class="nav-bar">
+        <a href="../../index.html">Inicio</a>
+        <a href="../../posts.html">Todos los posts</a>
+        <a href="https://github.com/pjimpin1207" target="_blank">Mi GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <article class="post">
+      <h2>Programas básicos con Python</h2>
+      <p class="meta">Publicado por <strong>pjimpin1207</strong> el <em>25 de septiembre de 2025</em></p>
+
+      <div class="post-body">
+        <p>En este post encontrarás una recopilación de programas básicos escritos en Python, ideales para practicar los fundamentos del lenguaje y entender la lógica de programación paso a paso.</p>
+
+        <!-- 1 -->
+        <h3>1. Programa que pide tu nombre y saluda</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+nombre = input("Introduce tu nombre: ")
+print("Hola " + nombre)
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Introduce tu nombre: Pablo
+Hola Pablo
+        </code></pre>
+
+        <!-- 2 -->
+        <h3>2. Programa que muestra "Hola nombre" directamente</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+nombre = "Pablo"
+print("Hola " + nombre + "!")
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Hola Pablo!
+        </code></pre>
+
+        <!-- 3 -->
+        <h3>3. Suma de dos números introducidos por teclado</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+num1 = int(input("Introduce el primer número: "))
+num2 = int(input("Introduce el segundo número: "))
+suma = num1 + num2
+print("La suma es:", suma)
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Introduce el primer número: 5
+Introduce el segundo número: 8
+La suma es: 13
+        </code></pre>
+
+        <!-- 4 -->
+        <h3>4. Verificación de usuario</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+usuario_correcto = "admin"
+usuario = input("Introduce tu usuario: ")
+
+if usuario == usuario_correcto:
+    print("Bienvenido,", usuario)
+else:
+    print("Error de inicio de sesión")
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Introduce tu usuario: admin
+Bienvenido, admin
+        </code></pre>
+
+        <!-- 5 -->
+        <h3>5. Mayor o menor (y comprobar si son iguales)</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+a = int(input("Introduce el primer número: "))
+b = int(input("Introduce el segundo número: "))
+
+if a > b:
+    print("El mayor es:", a)
+elif b > a:
+    print("El mayor es:", b)
+else:
+    print("Son iguales")
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Introduce el primer número: 7
+Introduce el segundo número: 7
+Son iguales
+        </code></pre>
+
+        <!-- 6 -->
+        <h3>6. Número par o impar</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+num = int(input("Introduce un número: "))
+
+if num % 2 == 0:
+    print("El número es par")
+else:
+    print("El número es impar")
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Introduce un número: 6
+El número es par
+        </code></pre>
+
+        <!-- 7 -->
+        <h3>7. Operaciones básicas (suma, resta, multiplicación, división)</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+a = int(input("Introduce el primer número: "))
+b = int(input("Introduce el segundo número: "))
+
+print("Suma:", a + b)
+print("Resta:", a - b)
+print("Multiplicación:", a * b)
+print("División:", a / b)
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Introduce el primer número: 6
+Introduce el segundo número: 3
+Suma: 9
+Resta: 3
+Multiplicación: 18
+División: 2.0
+        </code></pre>
+
+        <!-- 8 -->
+        <h3>8. Año bisiesto</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+anio = int(input("Introduce un año: "))
+
+if (anio % 4 == 0 and anio % 100 != 0) or (anio % 400 == 0):
+    print("El año es bisiesto")
+else:
+    print("El año no es bisiesto")
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Introduce un año: 2024
+El año es bisiesto
+        </code></pre>
+
+        <!-- 9 -->
+        <h3>9. Calcular nota</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+nota = float(input("Introduce tu nota: "))
+
+if nota >= 5:
+    print("Aprobado")
+else:
+    print("Suspenso")
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Introduce tu nota: 6.5
+Aprobado
+        </code></pre>
+
+        <!-- 10 -->
+        <h3>10. Calculadora básica</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+a = float(input("Introduce el primer número: "))
+b = float(input("Introduce el segundo número: "))
+
+print("Operaciones disponibles: +, -, *, /")
+op = input("Selecciona una operación: ")
+
+if op == "+":
+    print("Resultado:", a + b)
+elif op == "-":
+    print("Resultado:", a - b)
+elif op == "*":
+    print("Resultado:", a * b)
+elif op == "/":
+    print("Resultado:", a / b)
+else:
+    print("Operación no válida")
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Introduce el primer número: 8
+Introduce el segundo número: 2
+Selecciona una operación: *
+Resultado: 16
+        </code></pre>
+
+        <!-- 11 -->
+        <h3>11. Tipo de triángulo</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+a = int(input("Introduce el lado A: "))
+b = int(input("Introduce el lado B: "))
+c = int(input("Introduce el lado C: "))
+
+if a == b == c:
+    print("Triángulo equilátero")
+elif a == b or b == c or a == c:
+    print("Triángulo isósceles")
+else:
+    print("Triángulo escaleno")
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Introduce el lado A: 5
+Introduce el lado B: 5
+Introduce el lado C: 8
+Triángulo isósceles
+        </code></pre>
+
+        <!-- 12 -->
+        <h3>12. 100 líneas de "Hola Mundo"</h3>
+        <p><strong>Código:</strong></p>
+        <pre><code class="code-block">
+for i in range(1, 101):
+    print("Hola Mundo", i)
+        </code></pre>
+        <p><strong>Ejecución:</strong></p>
+        <pre><code class="code-block">
+Hola Mundo 1
+Hola Mundo 2
+...
+Hola Mundo 100
+        </code></pre>
+
+      </div>
+    </article>
+
+    <div class="back-link">
+      <a href="../../index.html" class="btn">← Volver al inicio</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Pablo Jiménez</p>
+  </footer>
+
+</body>
+</html>

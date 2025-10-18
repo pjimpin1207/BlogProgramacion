@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todos los posts - Blog DIWEB</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todos los Posts - Blog DIWEB</title>
+  <meta name="description" content="Listado completo de publicaciones del Blog DIWEB de Pablo Jiménez agrupadas por tema." />
+  <link rel="stylesheet" href="css/post.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/images/foto-perfil.jpg" type="image/jpeg" />
 </head>
-
-  <script src="js/posts.js"></script>
-  <script src="js/main.js"></script>
 <body>
+
   <!-- Header -->
   <header class="main-header">
     <div class="header-content">
-      <h1>Blog DIWEB</h1>
-      <p class="subtitle">Descubre mis proyectos, posts y aprendizajes sobre Desarrollo de Interfaces Web</p>
+      <h1>Todos los Posts</h1>
+      <p class="subtitle">Explora todas las publicaciones del Blog DIWEB</p>
       <nav class="nav-bar">
         <a href="index.html">Inicio</a>
-        <a href="posts.html">Todos los posts</a>
-        <a href="https://github.com/pjimpin1207" target="_blank">Mi GitHub</a>
+        <a href="posts/Tema1/">Tema 1</a>
+        <!--
+        <a href="posts/Tema2/">Tema 2</a>
+        <a href="posts/Tema3/">Tema 3</a>
+        -->
+
+        <a href="https://github.com/pjimpin1207" target="_blank">GitHub</a>
       </nav>
     </div>
   </header>
 
-  <!-- Contenedor de buscador y filtro -->
-  <section class="search-filter" style="text-align:center; margin:2rem 0;">
-    <input type="text" id="search" placeholder="Buscar posts" style="padding:0.5rem; width:200px; border-radius:4px; border:none;">
-    <select id="tag-filter" style="padding:0.5rem; border-radius:4px; border:none;">
-      <option value="all">Todas las etiquetas</option>
-    </select>
-  </section>
+  <!-- Contenido principal -->
+  <main class="main-content">
+    <section class="posts-grid">
+      <h2>Publicaciones del Blog</h2>
 
-  <!-- Contenedor de todos los posts -->
-  <section>
-    <div id="all-posts" class="posts-container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:1rem; max-width:1000px; margin:0 auto;"></div>
-  </section>
+      <div class="grid-container">
+
+        <!-- POST 1 -->
+        <article class="grid-post">
+          <h3>Clasificación de los lenguajes</h3>
+          <p></p>
+          <a href="posts/Tema1/ClasificacionLenguajes.html" class="btn">Leer más</a>
+        </article>
+
+        <!-- POST 2 -->
+        <article class="grid-post">
+          <h3>¿En qué consiste la programación?</h3>
+          <p>La programación es el proceso de diseñar y crear instrucciones para que un ordenador...</p>
+          <a href="posts/Tema1/EnQueConsisteLaProgramacion.html" class="btn">Leer más</a>
+        </article>
+
+      </div>
+    </section>
+
+    <div class="back-link">
+      <a href="index.html" class="btn">← Volver al inicio</a>
+    </div>
+  </main>
 
   <!-- Footer -->
-  <footer style="text-align:center; margin-top:2rem; padding:1rem; background-color:#111; color:white;">
-    <p>© 2025 Pablo Jimenez</p>
+  <footer>
+    <p>© 2025 Pablo Jiménez — <a href="https://github.com/pjimpin1207" target="_blank">GitHub</a></p>
   </footer>
-
-  <!-- Scripts -->
 
 </body>
 </html>
