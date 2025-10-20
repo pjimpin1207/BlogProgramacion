@@ -4,43 +4,57 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tema 1 - Blog DIWEB</title>
-  <link rel="stylesheet" href="../../css/style.css" />
+  <meta name="description" content="Ejercicios y contenidos del Tema 1 de DIWEB: algoritmos, programación, diagramas y Python.">
+  <link rel="stylesheet" href="../../css/tema1.css" />
 </head>
 <body>
-  <header class="main-header">
-    <div class="header-content">
-      <h1>Tema 1</h1>
-      <p class="subtitle">Ejercicios y contenidos del Tema 1 de DIWEB</p>
-      <nav class="nav-bar">
-        <a href="../../index.html">Inicio</a>
-        <a href="../../posts.html">Todos los posts</a>
-        <a href="https://github.com/pjimpin1207" target="_blank">GitHub</a>
-      </nav>
-    </div>
+  <!-- ===== CABECERA ===== -->
+  <header class="header">
+    <h1>Tema 1</h1>
+    <p class="subtitle">Ejercicios y contenidos del Tema 1 de DIWEB</p>
+    <nav class="nav">
+      <a href="../../index.html">Inicio</a>
+      <a href="./index.html">Tema 1</a>
+      <a href="https://github.com/pjimpin1207" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
   </header>
 
-  <main class="main-content tema-page">
-    <section class="recent-posts">
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <main class="main">
+    <section class="tema-section">
       <h2>Ejercicios del Tema 1</h2>
 
-      <!-- CONTENEDOR EN CUADRÍCULA -->
-      <div class="posts-grid-container">
-        <article class="post-card">
+      <div class="grid">
+        <article class="card">
           <h3>Clasificación de los lenguajes</h3>
-          <p></p>
-          <a href="posts/Tema1/ClasificacionLenguajes.html" class="btn">Leer más</a>
+          <p>Tipos y niveles de lenguajes de programación: bajo nivel, alto nivel y sus características.</p>
+          <a href="./ClasificacionLenguajes.html" class="btn">Leer más</a>
         </article>
 
-        <article class="post-card">
+        <article class="card">
           <h3>¿En qué consiste la programación?</h3>
-          <p>La programación es el proceso de diseñar y crear instrucciones para que un ordenador...</p>
-          <a href="posts/Tema1/EnQueConsisteLaProgramacion.html" class="btn">Leer más</a>
+          <p>La programación es el proceso de diseñar y crear instrucciones para que un ordenador ejecute tareas específicas.</p>
+          <a href="./EnQueConsisteLaProgramacion.html" class="btn">Leer más</a>
+        </article>
+
+        <article class="card">
+          <h3>Algoritmos y diagramas</h3>
+          <p>Aprende a estructurar algoritmos y representarlos visualmente mediante diagramas de flujo.</p>
+          <a href="./AlgoritmosYDiagramas.html" class="btn">Leer más</a>
+        </article>
+
+        <article class="card">
+          <h3>Programas básicos con Python</h3>
+          <p>Ejercicios introductorios con Python: variables, bucles, condicionales y funciones básicas.</p>
+          <a href="./ProgramasBasicosPython.html" class="btn">Leer más</a>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Pablo Jiménez</p>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 Pablo Jiménez — Blog DIWEB</p>
   </footer>
 </body>
 </html>
