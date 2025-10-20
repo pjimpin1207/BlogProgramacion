@@ -3,39 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Algoritmos y diagramas - Blog DIWEB</title>
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/post.css">
+  <title>Algoritmos y diagramas - Blog Programación</title>
+  <meta name="description" content="Ejemplos de algoritmos y diagramas de flujo: aprende a representar procesos lógicos paso a paso.">
+  <link rel="stylesheet" href="../../css/postsTema1.css">
 </head>
-<body>
 
-  <!-- Header -->
-  <header class="main-header">
-    <div class="header-content">
-      <h1>Blog DIWEB</h1>
-      <p class="subtitle">Descubre mis proyectos, posts y aprendizajes sobre Desarrollo de Interfaces Web</p>
-      <nav class="nav-bar">
-        <a href="../../index.html">Inicio</a>
-        <a href="../../posts.html">Todos los posts</a>
-        <a href="https://github.com/pjimpin1207" target="_blank">Mi GitHub</a>
-      </nav>
-    </div>
+<body>
+  <!-- ===== CABECERA ===== -->
+  <header class="header">
+    <h1>Algoritmos y diagramas</h1>
+    <p class="subtitle">Ejercicios y ejemplos prácticos de programación estructurada</p>
+    <nav class="nav">
+      <a href="../../index.html">Inicio</a>
+      <a href="../Tema1/index.html">Tema 1</a>
+      <a href="https://github.com/pjimpin1207" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </nav>
   </header>
 
-  <!-- Contenido principal -->
-  <main class="main-content">
+  <!-- ===== CONTENIDO PRINCIPAL ===== -->
+  <main class="main">
     <article class="post">
-      <h2>Algoritmos y diagramas</h2>
       <p class="meta">Publicado por <strong>pjimpin1207</strong> el <em>23 de septiembre de 2025</em></p>
 
       <div class="post-body">
-
         <p>En este post veremos ejemplos de algoritmos y sus diagramas de flujo. Los algoritmos se expresan como pasos lógicos que luego se pueden representar gráficamente mediante diagramas.</p>
 
-        <h3>Algoritmo y diagrama para calcular el área de un círculo</h3>
+        <h2>Algoritmo y diagrama para calcular el área de un círculo</h2>
         <p>Este algoritmo solicita el radio del círculo, calcula su área y muestra el resultado final.</p>
 
-        <pre><code class="code-block">
+        <pre><code>
 // Algoritmo: Calcular el área de un círculo
 Inicio
     Escribir "Introduce el valor del radio:"
@@ -50,10 +46,10 @@ Fin
           <li>Inicio → Leer radio → Calcular área = π * r² → Mostrar resultado → Fin</li>
         </ul>
 
-        <h3>Algoritmo y diagrama para calcular la nota media de tres notas</h3>
+        <h2>Algoritmo y diagrama para calcular la nota media de tres notas</h2>
         <p>Este algoritmo pide tres notas distintas, calcula la media y muestra el resultado.</p>
 
-        <pre><code class="code-block">
+        <pre><code>
 // Algoritmo: Calcular la media de tres notas
 Inicio
     Escribir "Introduce la primera nota:"
@@ -72,10 +68,10 @@ Fin
           <li>Inicio → Leer n1, n2, n3 → Calcular media = (n1 + n2 + n3)/3 → Mostrar resultado → Fin</li>
         </ul>
 
-        <h3>Algoritmo y diagrama para calcular la nota media e indicar si está aprobado o suspenso</h3>
+        <h2>Algoritmo y diagrama para calcular la nota media e indicar si está aprobado o suspenso</h2>
         <p>En este algoritmo se calcula la nota media de tres notas y se evalúa si el alumno aprueba (nota ≥ 5) o suspende.</p>
 
-        <pre><code class="code-block">
+        <pre><code>
 // Algoritmo: Media y resultado final
 Inicio
     Escribir "Introduce tres notas:"
@@ -94,10 +90,10 @@ Fin
           <li>Inicio → Leer n1, n2, n3 → Calcular media → ¿media ≥ 5? → (Sí) “Aprobado” / (No) “Suspenso” → Fin</li>
         </ul>
 
-        <h3>Algoritmo y diagrama para determinar si una persona es mayor de edad</h3>
+        <h2>Algoritmo y diagrama para determinar si una persona es mayor de edad</h2>
         <p>Este programa solicita la edad y muestra si la persona es mayor o menor de edad.</p>
 
-        <pre><code class="code-block">
+        <pre><code>
 // Algoritmo: Mayor de edad
 Inicio
     Escribir "Introduce tu edad:"
@@ -114,19 +110,17 @@ Fin
         <ul>
           <li>Inicio → Leer edad → ¿edad ≥ 18? → (Sí) “Mayor de edad” / (No) “Menor de edad” → Fin</li>
         </ul>
-
       </div>
     </article>
 
-    <div class="back-link">
-      <a href="../../index.html" class="btn">← Volver al inicio</a>
+    <div class="back">
+      <a href="../Tema1/index.html" class="btn">← Volver a Tema 1</a>
     </div>
   </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Pablo Jiménez</p>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 Pablo Jiménez — Blog Programación</p>
   </footer>
-
 </body>
 </html>
